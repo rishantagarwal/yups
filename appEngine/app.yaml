@@ -1,0 +1,13 @@
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /_ah/mail/.+
+  script: mail.php
+  login: admin
+
+- url: /.*
+  script: index.php
+
+inbound_services:
+- mail
