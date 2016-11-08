@@ -3,7 +3,7 @@
 $tmp = file_get_contents("php://input");
 // syslog(LOG_INFO,json_encode($tmp,JSON_PRETTY_PRINT));
 
-$url = 'https://anonymous-mail.herokuapp.com/mail';
+$url = 'https://altmail.herokuapp.com/api/mail';
 $data = ['mail' => $tmp];
 $headers = "accept: */*\r\n" .
     "Content-Type: application/x-www-form-urlencoded\r\n" .
